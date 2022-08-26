@@ -1,26 +1,25 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Navbar from './components/Navbar'
-import {Table} from './components/Table'
-import {Card} from './components/Card'
-import Footer from './components/Footer'
+import {FirstClassComponent} from './pages/First-Class-Component'
+// import Navbar from './components/Navbar'
+// import {Table} from './components/Table'
+// import {Card} from './components/Card'
+// import Footer from './components/Footer'
 
 
 
 const App = () => { 
     return ( 
         <div>
-        <Navbar />     
-        <Navbar />     
-        <Navbar />     
-        <Navbar />     
+          <FirstClassComponent />
+      {/* <Navbar />     
         <Table />
         <div className="d-flex justify-content-between">
                <Card />
                <Card />
                <Card />
         </div>
-        <Footer/>
+        <Footer/> */}
   </div>
     )
 }

@@ -1,12 +1,16 @@
-export const Card = () => { 
+export const Card = ({img,title,content}) => { 
+  console.log({img,title,content});
+  
     return ( 
-<div class="card" style={{width:"18rem"}}>
+<div className="card mt-3" style={{width:"18rem"}}>
+  <div style={{width:'18rem',height:'400px'}}>
   <img 
-  src="https://images.unsplash.com/photo-1611558709798-e009c8fd7706?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbGFkeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" 
-  class="card-img-top" alt="..." />
+  src = {img}
+  className="card-img-top " alt="..." style={{width:'100%',height:"100%",objectFit:"cover"}} />
+  </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">{title}</h5>
+    <p class="card-text">{content}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
